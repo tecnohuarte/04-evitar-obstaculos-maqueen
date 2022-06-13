@@ -1,6 +1,6 @@
 let Izquierda = false
 basic.forever(function () {
-    if (maqueen.Ultrasonic(PingUnit.Centimeters) < 30) {
+    if (maqueen.Ultrasonic(PingUnit.Centimeters) < 20) {
         Izquierda = Math.randomBoolean()
         if (Izquierda == true) {
             maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 255)
